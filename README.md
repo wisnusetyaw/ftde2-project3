@@ -24,24 +24,3 @@ Prepare Tools:
 Dataset:
 
 https://www.kaggle.com/datasets/kapturovalexander/pagila-postgresql-sample-database
-
-Step by Step
-Check connection DB server
-Postgres
-TiDB
-Run airflow on your local
-Create file requirements.txt
-Build images, Dockerfile
-docker build -t my-airflow .
-Create docker compose, docker-compose.yaml
-Set connection on airflow
-Postgres
-TiDB
-Extract
-Create module connector postgres
-Create module get data from postgres
-Transform
-Creae script for transformation data using spark
-Load
-Create module connector for hadoop
-create load data to hadoop
