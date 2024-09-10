@@ -72,7 +72,7 @@ def fun_top_countries_get_data(**kwargs):
 def fun_top_countries_load_data(**kwargs):
     df = pd.read_parquet('data_result_task_1')
     engine = create_engine('mysql+mysqlconnector://4FFFhK9fXu6JayE.root:9v07S0pKe4ZYCkjE@gateway01.ap-southeast-1.prod.aws.tidbcloud.com:4000/test')
-    df.to_sql('top_country_hilmi', con=engine, if_exists='append')
+    df.to_sql('top_country_Wisnu', con=engine, if_exists='append')
 
 def fun_total_film_get_data(**kwargs):
     # Create a SparkSession
@@ -133,7 +133,7 @@ def fun_total_film_get_data(**kwargs):
 def fun_total_film_load_data(**kwargs):
     df = pd.read_parquet('data_result_task_2')
     engine = create_engine('mysql+mysqlconnector://4FFFhK9fXu6JayE.root:9v07S0pKe4ZYCkjE@gateway01.ap-southeast-1.prod.aws.tidbcloud.com:4000/test')
-    df.to_sql('total_film_hilmi', con=engine, if_exists='append')
+    df.to_sql('total_film_Wisnu', con=engine, if_exists='append')
 
 with DAG(
     dag_id='d_1_batch_processing',
